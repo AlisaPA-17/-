@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <windows.h>
 
 using namespace std;
 
@@ -24,6 +25,9 @@ double calculate_caloric(double weight, double target_weight) {
 }
 
 int main() {
+
+    SetConsoleOutputCP(CP_UTF8);
+    
     cout << "Добро пожаловать в калькулятор килакалорий для достижения нормального веса!" << endl;
 
     double weight, height;
